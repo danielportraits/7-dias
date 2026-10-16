@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#350b20">
+  <title>7 días para Helena ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <main class="shell">
+    <header class="topline"><span class="mini-heart">♥</span><span>UN DETALLE HECHO CON CARIÑO</span><span class="mini-heart">♥</span></header>
+
+    <section id="login" class="panel login-panel">
+      <div class="flower">🌹</div>
+      <p class="eyebrow">UNA EXPERIENCIA PARA UNA PERSONA ESPECIAL</p>
+      <h1>Esto es para ti,<br><em>Helena</em></h1>
+      <p class="intro">Siete días, siete sorpresas y un pequeño secreto esperando por ti.</p>
+      <form id="code-form">
+        <label for="secret-code">Introduce tu código secreto</label>
+        <input id="secret-code" name="secret-code" type="password" autocomplete="off" placeholder="Tu código secreto" required>
+        <button type="submit" class="primary">Abrir mi sorpresa <span>♥</span></button>
+        <p id="login-error" class="error" aria-live="polite"></p>
+      </form>
+      <p class="small-note">Un pequeño rincón preparado especialmente para ti.</p>
+    </section>
+
+    <section id="calendar-view" class="hidden">
+      <div class="hero panel">
+        <p class="eyebrow">TU PEQUEÑO UNIVERSO</p>
+        <h1>7 días para <em>Helena</em></h1>
+        <p class="intro">Cada día guarda algo distinto. Las sorpresas llegan a su tiempo, y las que ya abriste siempre estarán aquí.</p>
+        <div class="progress-wrap"><div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div><p id="progress-label">Día 1 de 7</p></div>
+        <p id="mode-label" class="small-note">MODO HELENA · PROGRESO GUARDADO EN ESTE CELULAR</p>
+        <button id="switch-mode" type="button" class="secondary">Cambiar código / modo de revisión</button>
+      </div>
+      <div id="calendar" class="calendar" aria-label="Calendario de las siete sorpresas"></div>
+      <section id="surprise-panel" class="panel surprise-panel hidden" aria-live="polite">
+        <button id="close-surprise" class="close" aria-label="Cerrar sorpresa">×</button>
+        <p id="surprise-kicker" class="eyebrow">TU SORPRESA</p>
+        <h2 id="surprise-title">Una sorpresa para ti</h2>
+        <div id="surprise-content" class="surprise-content"></div>
+      </section>
+      <footer class="footer">Hecho con cariño, para ti. <span>♥</span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
